@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mist_sample_wakeup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mM-j4-pvX">
+                                <rect key="frame" x="107" y="428" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I1X-Ps-VQ5"/>
+                                    <constraint firstAttribute="width" constant="200" id="Lpv-0i-tfm"/>
+                                </constraints>
+                                <state key="normal" title="Start Wakeup">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleWakeup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y0p-2d-1ql"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M3-MY-qIX">
+                                <rect key="frame" x="57" y="355.5" width="300" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3aY-Og-wh5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4M3-MY-qIX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WTL-1P-7vh"/>
+                            <constraint firstItem="5mM-j4-pvX" firstAttribute="top" secondItem="4M3-MY-qIX" secondAttribute="bottom" constant="52" id="iRJ-pb-mLS"/>
+                            <constraint firstItem="5mM-j4-pvX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="og5-wh-RT2"/>
+                            <constraint firstItem="5mM-j4-pvX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vGl-uO-W9m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="statusLbl" destination="4M3-MY-qIX" id="dki-wB-8Fz"/>
+                        <outlet property="wakeupBtn" destination="5mM-j4-pvX" id="uKS-Kc-HVk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+</document>

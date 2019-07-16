@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7810D55422DD4BD8006DE1A7 /* MistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810D55322DD4BD8006DE1A7 /* MistManager.m */; };
+		7810D57322DD6797006DE1A7 /* MistSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7810D56122DD4D64006DE1A7 /* MistSDK.framework */; };
+		7810D57422DD6797006DE1A7 /* MistSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7810D56122DD4D64006DE1A7 /* MistSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		789AE06022DD4B1200CF9BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AE05F22DD4B1200CF9BD4 /* AppDelegate.swift */; };
+		789AE06222DD4B1200CF9BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AE06122DD4B1200CF9BD4 /* ViewController.swift */; };
+		789AE06522DD4B1200CF9BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AE06322DD4B1200CF9BD4 /* Main.storyboard */; };
+		789AE06722DD4B1400CF9BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789AE06622DD4B1400CF9BD4 /* Assets.xcassets */; };
+		789AE06A22DD4B1400CF9BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AE06822DD4B1400CF9BD4 /* LaunchScreen.storyboard */; };
+		789AE07B22DD4B2800CF9BD4 /* WakeupUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 789AE07822DD4B2800CF9BD4 /* WakeupUtil.m */; };
+		789AE07C22DD4B2800CF9BD4 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AE07922DD4B2800CF9BD4 /* NotificationHelper.swift */; };
+		8D196133BB3013AD0583A0ED /* Pods_mist_sample_wakeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B385AB5AA10A40A363DA115 /* Pods_mist_sample_wakeup.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7810D56022DD4D64006DE1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7810D55A22DD4D63006DE1A7 /* MistSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 605A70271B3CD6C300AFC209;
+			remoteInfo = MistSDK;
+		};
+		7810D56222DD4D64006DE1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7810D55A22DD4D63006DE1A7 /* MistSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 605A70321B3CD6C400AFC209;
+			remoteInfo = MistSDKTests;
+		};
+		7810D56422DD4D64006DE1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7810D55A22DD4D63006DE1A7 /* MistSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB343C3A1B452C5C004145AB;
+			remoteInfo = Certificates;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7810D57522DD6797006DE1A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7810D57422DD6797006DE1A7 /* MistSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2AF8241DEA75A33F45A8991A /* Pods-mist-sample-wakeup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mist-sample-wakeup.release.xcconfig"; path = "Pods/Target Support Files/Pods-mist-sample-wakeup/Pods-mist-sample-wakeup.release.xcconfig"; sourceTree = "<group>"; };
+		3B385AB5AA10A40A363DA115 /* Pods_mist_sample_wakeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mist_sample_wakeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7810D55222DD4BD8006DE1A7 /* MistManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MistManager.h; sourceTree = "<group>"; };
+		7810D55322DD4BD8006DE1A7 /* MistManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MistManager.m; sourceTree = "<group>"; };
+		7810D55822DD4C94006DE1A7 /* mist-sample-wakeup-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "mist-sample-wakeup-Bridging-Header.h"; path = "../../../mist-sample-wakeup/mist-sample-wakeup/mist-sample-wakeup-Bridging-Header.h"; sourceTree = "<group>"; };
+		7810D55A22DD4D63006DE1A7 /* MistSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MistSDK.xcodeproj; path = "../../../iOS-Framework/MistSDK.xcodeproj"; sourceTree = "<group>"; };
+		789AE05C22DD4B1200CF9BD4 /* mist-sample-wakeup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mist-sample-wakeup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		789AE05F22DD4B1200CF9BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		789AE06122DD4B1200CF9BD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		789AE06422DD4B1200CF9BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		789AE06622DD4B1400CF9BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789AE06922DD4B1400CF9BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		789AE06B22DD4B1400CF9BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789AE07622DD4B2800CF9BD4 /* WakeupUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WakeupUtil.h; sourceTree = "<group>"; };
+		789AE07822DD4B2800CF9BD4 /* WakeupUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WakeupUtil.m; sourceTree = "<group>"; };
+		789AE07922DD4B2800CF9BD4 /* NotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		C215B813FA639511C630B345 /* Pods-mist-sample-wakeup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mist-sample-wakeup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mist-sample-wakeup/Pods-mist-sample-wakeup.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		789AE05922DD4B1200CF9BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7810D57322DD6797006DE1A7 /* MistSDK.framework in Frameworks */,
+				8D196133BB3013AD0583A0ED /* Pods_mist_sample_wakeup.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7810D55B22DD4D63006DE1A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7810D56122DD4D64006DE1A7 /* MistSDK.framework */,
+				7810D56322DD4D64006DE1A7 /* MistSDKTests.xctest */,
+				7810D56522DD4D64006DE1A7 /* Certificates.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7810D56622DD4D92006DE1A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B385AB5AA10A40A363DA115 /* Pods_mist_sample_wakeup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		789AE05322DD4B1200CF9BD4 = {
+			isa = PBXGroup;
+			children = (
+				7810D55A22DD4D63006DE1A7 /* MistSDK.xcodeproj */,
+				789AE05E22DD4B1200CF9BD4 /* mist-sample-wakeup */,
+				789AE05D22DD4B1200CF9BD4 /* Products */,
+				7810D56622DD4D92006DE1A7 /* Frameworks */,
+				834078FCE9EAA4F33A726749 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		789AE05D22DD4B1200CF9BD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				789AE05C22DD4B1200CF9BD4 /* mist-sample-wakeup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		789AE05E22DD4B1200CF9BD4 /* mist-sample-wakeup */ = {
+			isa = PBXGroup;
+			children = (
+				789AE05F22DD4B1200CF9BD4 /* AppDelegate.swift */,
+				789AE06122DD4B1200CF9BD4 /* ViewController.swift */,
+				789AE06322DD4B1200CF9BD4 /* Main.storyboard */,
+				789AE07622DD4B2800CF9BD4 /* WakeupUtil.h */,
+				789AE07822DD4B2800CF9BD4 /* WakeupUtil.m */,
+				7810D55222DD4BD8006DE1A7 /* MistManager.h */,
+				7810D55322DD4BD8006DE1A7 /* MistManager.m */,
+				789AE07922DD4B2800CF9BD4 /* NotificationHelper.swift */,
+				7810D55822DD4C94006DE1A7 /* mist-sample-wakeup-Bridging-Header.h */,
+				789AE06622DD4B1400CF9BD4 /* Assets.xcassets */,
+				789AE06822DD4B1400CF9BD4 /* LaunchScreen.storyboard */,
+				789AE06B22DD4B1400CF9BD4 /* Info.plist */,
+			);
+			path = "mist-sample-wakeup";
+			sourceTree = "<group>";
+		};
+		834078FCE9EAA4F33A726749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C215B813FA639511C630B345 /* Pods-mist-sample-wakeup.debug.xcconfig */,
+				2AF8241DEA75A33F45A8991A /* Pods-mist-sample-wakeup.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		789AE05B22DD4B1200CF9BD4 /* mist-sample-wakeup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789AE06E22DD4B1400CF9BD4 /* Build configuration list for PBXNativeTarget "mist-sample-wakeup" */;
+			buildPhases = (
+				C60850BE2712C53784911917 /* [CP] Check Pods Manifest.lock */,
+				789AE05822DD4B1200CF9BD4 /* Sources */,
+				789AE05922DD4B1200CF9BD4 /* Frameworks */,
+				789AE05A22DD4B1200CF9BD4 /* Resources */,
+				7810D57522DD6797006DE1A7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mist-sample-wakeup";
+			productName = "mist-sample-wakeup";
+			productReference = 789AE05C22DD4B1200CF9BD4 /* mist-sample-wakeup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		789AE05422DD4B1200CF9BD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Mist Systems";
+				TargetAttributes = {
+					789AE05B22DD4B1200CF9BD4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 789AE05722DD4B1200CF9BD4 /* Build configuration list for PBXProject "mist-sample-wakeup" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 789AE05322DD4B1200CF9BD4;
+			productRefGroup = 789AE05D22DD4B1200CF9BD4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7810D55B22DD4D63006DE1A7 /* Products */;
+					ProjectRef = 7810D55A22DD4D63006DE1A7 /* MistSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				789AE05B22DD4B1200CF9BD4 /* mist-sample-wakeup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7810D56122DD4D64006DE1A7 /* MistSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MistSDK.framework;
+			remoteRef = 7810D56022DD4D64006DE1A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7810D56322DD4D64006DE1A7 /* MistSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MistSDKTests.xctest;
+			remoteRef = 7810D56222DD4D64006DE1A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7810D56522DD4D64006DE1A7 /* Certificates.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Certificates.bundle;
+			remoteRef = 7810D56422DD4D64006DE1A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		789AE05A22DD4B1200CF9BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789AE06A22DD4B1400CF9BD4 /* LaunchScreen.storyboard in Resources */,
+				789AE06722DD4B1400CF9BD4 /* Assets.xcassets in Resources */,
+				789AE06522DD4B1200CF9BD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C60850BE2712C53784911917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mist-sample-wakeup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		789AE05822DD4B1200CF9BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7810D55422DD4BD8006DE1A7 /* MistManager.m in Sources */,
+				789AE06222DD4B1200CF9BD4 /* ViewController.swift in Sources */,
+				789AE07C22DD4B2800CF9BD4 /* NotificationHelper.swift in Sources */,
+				789AE06022DD4B1200CF9BD4 /* AppDelegate.swift in Sources */,
+				789AE07B22DD4B2800CF9BD4 /* WakeupUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		789AE06322DD4B1200CF9BD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789AE06422DD4B1200CF9BD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		789AE06822DD4B1400CF9BD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789AE06922DD4B1400CF9BD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		789AE06C22DD4B1400CF9BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		789AE06D22DD4B1400CF9BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		789AE06F22DD4B1400CF9BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C215B813FA639511C630B345 /* Pods-mist-sample-wakeup.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6W43QBW7N;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "mist-sample-wakeup/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mist.mist-sample-wakeup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mist-sample-wakeup/mist-sample-wakeup-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		789AE07022DD4B1400CF9BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF8241DEA75A33F45A8991A /* Pods-mist-sample-wakeup.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6W43QBW7N;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "mist-sample-wakeup/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mist.mist-sample-wakeup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mist-sample-wakeup/mist-sample-wakeup-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		789AE05722DD4B1200CF9BD4 /* Build configuration list for PBXProject "mist-sample-wakeup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789AE06C22DD4B1400CF9BD4 /* Debug */,
+				789AE06D22DD4B1400CF9BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789AE06E22DD4B1400CF9BD4 /* Build configuration list for PBXNativeTarget "mist-sample-wakeup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789AE06F22DD4B1400CF9BD4 /* Debug */,
+				789AE07022DD4B1400CF9BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 789AE05422DD4B1200CF9BD4 /* Project object */;
+}
