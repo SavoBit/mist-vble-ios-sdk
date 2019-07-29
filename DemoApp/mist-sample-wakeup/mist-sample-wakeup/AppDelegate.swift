@@ -36,15 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if bgTask == nil {
             return
         }
-        if bgTask != UIBackgroundTaskInvalid {
+        if bgTask != UIBackgroundTaskIdentifier.invalid {
             UIApplication.shared.endBackgroundTask(bgTask!)
-            bgTask = UIBackgroundTaskInvalid
+            bgTask = UIBackgroundTaskIdentifier.invalid
         }
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let _ = launchOptions?[UIApplicationLaunchOptionsKey.location] {
+        if let _ = launchOptions?[UIApplication.LaunchOptionsKey.location] {
             self.startBackgroundTask()
         }
         return true
