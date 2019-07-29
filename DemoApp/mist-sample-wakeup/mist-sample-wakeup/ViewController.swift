@@ -13,7 +13,7 @@ import MistSDK
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
-    var portakSDKToken: String? = "PEQb2LVkq4P2cbayrR9xYypdBXJYj62D"
+    var portakSDKToken: String? = "SeSLxiDcFFVdTji7EZdawHb7o38I2m61"
     var locationManager: CLLocationManager!
     
     @IBOutlet weak var wakeupBtn: UIButton!
@@ -91,20 +91,20 @@ extension ViewController: WakeupUtilDelegate {
     
     func utilityLocationManager(_ manager: CLLocationManager!, didEnter region: CLRegion!) {
         
-        let msg = "didEnter \(region.identifier)"
-        NSLog("\(msg)")
-        NotificationHelper.schedule(afterSec: 3, withTitle: msg, withSub: msg, withBody: msg, withImageName: "applelogo")
-        
         if UIApplication.shared.applicationState == UIApplication.State.background ||
             UIApplication.shared.applicationState == UIApplication.State.inactive {
+        
+            let msg = "didEnter \(region.identifier) \(UIApplication.shared.applicationState)"
+            NSLog("\(msg)")
+            NotificationHelper.schedule(afterSec: 0, withTitle: msg, withSub: msg, withBody: msg, withImageName: "applelogo")
             
             if !MistManager.sharedInstance().isConnected {
                 MistManager.sharedInstance().setWakeUpAppSetting(true)
                 MistManager.sharedInstance().backgroundAppSetting(true)
-                MistManager.sharedInstance().setSentTimeInBackgroundInMins(0.5, restTimeInBackgroundInMins: 15.0)
+                MistManager.sharedInstance().setSentTimeInBackgroundInMins(0.5, restTimeInBackgroundInMins: 1)
                 MistManager.sharedInstance().connect()
                 
-                NotificationHelper.schedule(afterSec: 3, withTitle: "Starting SDK...", withSub: msg, withBody: msg, withImageName: "applelogo")
+                NotificationHelper.schedule(afterSec: 0, withTitle: "Starting SDK...", withSub: msg, withBody: msg, withImageName: "applelogo")
             }
         }
     }
