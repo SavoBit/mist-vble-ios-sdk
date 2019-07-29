@@ -13,9 +13,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var wakeupInstance = WakeupUtil.sharedInstance()
+    var bgTask : UIBackgroundTaskIdentifier?
+    
+    func startBackgroundTask() {
+        self.stopBackgroundTask()
+        bgTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
+            self.stopBackgroundTask()
+        })
+        DispatchQueue.main.async {
+            NotificationHelper.schedule(afterSec: 1, withTitle: "Test", withSub: "Test", withBody: "Test", withImageName: "applelogo")
+            if !MistManager.sharedInstance().isConnected {
+                MistManager.sharedInstance().setWakeUpAppSetting(true)
+                MistManager.sharedInstance().backgroundAppSetting(true)
+                MistManager.sharedInstance().setSentTimeInBackgroundInMins(0.5, restTimeInBackgroundInMins: 1)
+                MistManager.sharedInstance().connect()
+                NotificationHelper.schedule(afterSec: 2, withTitle: "Starting SDK...", withSub: "Test", withBody: "Test", withImageName: "applelogo")
+            }
+        }
+    }
+    
+    func stopBackgroundTask() {
+        if bgTask == nil {
+            return
+        }
+        if bgTask != UIBackgroundTaskInvalid {
+            UIApplication.shared.endBackgroundTask(bgTask!)
+            bgTask = UIBackgroundTaskInvalid
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let _ = launchOptions?[UIApplicationLaunchOptionsKey.location] {
+            self.startBackgroundTask()
+        }
         return true
     }
 
