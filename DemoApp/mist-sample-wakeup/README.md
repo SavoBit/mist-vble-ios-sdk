@@ -66,3 +66,5 @@ At this point as well, the application has initialized the SDK and is trying to 
 ### 15.) Go to the Mist portal live view for the map that the AP is configured in
 Location → Live View → (Choose the Site) → (Choose the Map)
 At this point, a blue person icon should be displayed near the AP (green square) you are using. This confirms that the SDK is connected and the portal is getting the beacon data.
+
+![ImageN](../blue-person.png)
