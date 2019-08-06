@@ -14,21 +14,22 @@
 
 #### AP Configuration
 
-Each AP in the Site that you would like to broadcast the app wakeup needs to be configured 
-Go to Access Points → (Choose an Access Point for the site) → BLE Settings
-Enable "Enable BLE iBeacon"
+* Each AP in the Site that you would like to broadcast the app wakeup needs to be configured 
+* Go to Access Points → (Choose an Access Point for the site) → BLE Settings
+  * Enable "Enable BLE iBeacon"
 
 ### 2.) Download sample code 
           https://github.com/mistsys/mist-vble-ios-sdk/tree/mist-sample-wakeup
 
 ### 3.) Get the sdk Secret Key from the Mist portal
-Go to Organization → Mobile SDK → Copy the key from the "Secret" column (you may need to create an invitation if there is not at least one available)
+* Go to Organization → Mobile SDK → Copy the key from the "Secret" column (you may need to create an invitation if there is not at least one available)
 
 ### 4.) Add the secret key to the sample app
-Open the sample app in xCode
-In the ViewController.swift file set the values of portalSDKToken to the secret key you got from the portal
+* Open the sample app in xCode
+* In the ViewController.swift file set the values of portalSDKToken to the secret key you got from the portal
+    ```
      var portalSDKToken: String? = "PPRsreycFghetRHHAPKHDTRH71gVDULVC"
-
+    ```
 
 ### 5.) Make sure you are in a place not receiving iBeacon information from any Mist AP in the organization. Having access to a single AP (that is configured to the org and for a specific site and map) is very beneficial to trying out this steps. It should be unplugged at this point, so that it does not broadcast any iBeacons.  
 
