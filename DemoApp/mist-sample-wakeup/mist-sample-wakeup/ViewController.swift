@@ -13,7 +13,7 @@ import MistSDK
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
-    var portakSDKToken: String? = "SeSLxiDcFFVdTji7EZdawHb7o38I2m61"
+    var portakSDKToken: String? = "SeSLxiDcFFVd12345ZdawHb7o38I2m61"
     var locationManager: CLLocationManager!
     
     @IBOutlet weak var wakeupBtn: UIButton!
