@@ -3,18 +3,35 @@
 ## Overview
 Mist SDK will provide you the indoor bluedot experience using Mist’s 16 vBLE antenna array Access point. Using this SDK you will know where the user is and can provide proximity related notification using Mist patented *vBeacon technology*.
 
-## Download
+## Latest Release
+
 Mist vBLE iOS SDK is distributed via framework file:            
 
-*Non-DR latest version is 1.5.58* [[Download Link]](https://github.com/mistsys/mist-vble-ios-sdk/tree/master/Frameworks/1.5.58) .  
-*DR latest version is 1.5.218-dr* [[Download Link]](https://github.com/mistsys/mist-vble-ios-sdk/tree/dr2/Frameworks/1.5.218-dr) .  
+- *Non-DR latest version is 1.5.58* [[Download SDK]](https://github.com/mistsys/mist-vble-ios-sdk/tree/master/Frameworks/1.5.58) .  
+- *DR latest version is 1.5.272-dr* [[Download SDK]](https://github.com/mistsys/mist-vble-ios-sdk/tree/dr2/Frameworks/1.5.272-dr).  
 
-Note: Mist vBLE iOS SDK (Non-DR version) is available on cocoa-pods.[[Reference]](https://github.com/mistsys/mist-vble-ios-sdk/wiki#installation-using-cocoa-pods-for-non-dr-) .       
-``` pod ‘MistSDK’  ```
+Mist vBLE iOS SDK is also available on cocoapods.
+
+- For Mist SDK without DR, use the following dependency in your xcode project pod file:               
+
+  ``` pod 'MistSDK'  ```      
+  
+- For Mist SDK with DR, use the following dependency in your xcode project pod file:          
+
+   ```pod 'MistSDKDR' ```        
+   
+For details, see [Installation using cocoapods](https://github.com/mistsys/mist-vble-ios-sdk/wiki#installation-using-cocoa-pods).         
+
+> Note: We recommend to use Mist SDK with DR for better location accuracy.
 
 
 ## Integrating Mist SDK
-To know more about Mist vBLE iOS SDK integration in your iOS app, please visit our [**Wiki page**](https://github.com/mistsys/mist-vble-ios-sdk/wiki) .  
+To integrate Mist vBLE iOS SDK in your app, please follow the instructions available at [Integration Guide in Wiki section](https://github.com/mistsys/mist-vble-ios-sdk/wiki).  
+
+## Sample Apps 
+For more detail, you can see the implementation in the sample app below.    
+* [Sample app using Mist SDK without DR](https://github.com/mistsys/mist-vble-ios-sdk/tree/master/DemoApp)    
+* [Sample app using Mist SDK with DR](https://github.com/mistsys/mist-vble-ios-sdk/tree/dr2/DemoApp)      
 
 
 ## Releases   
