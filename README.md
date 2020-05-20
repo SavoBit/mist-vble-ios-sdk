@@ -9,6 +9,7 @@ Mist vBLE iOS SDK is distributed via framework file:
 
 - *Non-DR latest version is 1.5.58* [[Download SDK]](https://github.com/mistsys/mist-vble-ios-sdk/tree/master/Frameworks/1.5.58) .  
 - *DR latest version is 1.5.272-dr* [[Download SDK]](https://github.com/mistsys/mist-vble-ios-sdk/tree/dr2/Frameworks/1.5.272-dr).  
+- *DR latest version is 1.5.278-beta* [[Download SDK]](https://github.com/mistsys/mist-vble-ios-sdk/tree/dr2-beta/Frameworks/1.5.278-beta).
 
 Mist vBLE iOS SDK is also available on cocoapods.
 
@@ -18,7 +19,11 @@ Mist vBLE iOS SDK is also available on cocoapods.
   
 - For Mist SDK with DR, use the following dependency in your xcode project pod file:          
 
-   ```pod 'MistSDKDR' ```        
+   ```pod 'MistSDKDR' ```    
+   
+- For Mist SDK with DR (Beta version), use the following dependency in your xcode project pod file:          
+
+   ```pod 'MistSDKDR-Beta' ``` 
    
 For details, see [Installation using cocoapods](https://github.com/mistsys/mist-vble-ios-sdk/wiki#installation-using-cocoa-pods).         
 
