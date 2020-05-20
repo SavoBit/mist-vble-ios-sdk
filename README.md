@@ -18,9 +18,8 @@ OR
 
 For details, see [Installation using cocoapods](https://github.com/mistsys/mist-vble-ios-sdk/wiki#installation-using-cocoa-pods) .  
 
-
-## Integrating Mist SDK
-To integrate Mist vBLE iOS SDK in your app, please follow the instructions available at [Integration Guide in Wiki section](https://github.com/mistsys/mist-vble-ios-sdk/wiki)
+## Release Notes:
+- Support to enroll Org on Google Cloud Environment, inaddition to AWS.
 
 ## Sample Apps:
 For more detail, you can see the implementation in the sample app [here](https://github.com/mistsys/mist-vble-ios-sdk/tree/beta/DemoApp).
