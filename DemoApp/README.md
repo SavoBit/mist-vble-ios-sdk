@@ -8,7 +8,7 @@ Drag and drop the MistSDK.framework file in your xcode project.
 
 ### Cocoapods Installation:  
 Add the following dependency in pod file:                    
-```pod 'MistSDKDR' ```    
+``` pod 'MistSDKDR-Beta'  ```    
 
 ### Classes:
 MainViewController.Swift:

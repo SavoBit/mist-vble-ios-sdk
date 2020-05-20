@@ -6,6 +6,6 @@ target 'Mist-vbeacon-zone-notification-dr' do
   use_frameworks!
 
   # Pods for Mist-vbeacon-zone-notification-dr
-  pod 'MistSDKDR'
+  pod 'MistSDKDR-Beta'
 
 end

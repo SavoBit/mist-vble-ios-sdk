@@ -15,6 +15,7 @@ class ViewController: UIViewController, MSTCentralManagerDelegate, MSTCentralMan
     @IBOutlet var mapImageView: UIImageView!
     @IBOutlet var progressView: UIActivityIndicatorView!
     
+    
     //Constants - location response
     let kOrgName = "name"
     let kOrgId = "org_id"
@@ -65,6 +66,8 @@ class ViewController: UIViewController, MSTCentralManagerDelegate, MSTCentralMan
             //Conversion of image to pixel per meter
             self.ppm = newMap.ppm
             
+
+            
             // download image using map url
             self.downloadMap(with:URL(string: mapURL)) { (data, urlResponse, error) in
                 let mapImage = UIImage(data: data!)
@@ -75,7 +78,8 @@ class ViewController: UIViewController, MSTCentralManagerDelegate, MSTCentralMan
                     //add the image to mapImageView
                     self.mapImage = mapImage
                     self.mapImageView.image = mapImage
-                    
+
+                    print("actual size of image in KB: \(Double(data?.count ?? 0) / 1000.0)")
                     //Update the backdropview and mapImageview based on image size
                     self.updateBackdropFrame()
                     
@@ -94,7 +98,6 @@ class ViewController: UIViewController, MSTCentralManagerDelegate, MSTCentralMan
                 print("Error: drInfo empty")
                 return
         }
-        
         DispatchQueue.main.async {
             let point = MSTPoint.init(x: x, andY: y)
             if point != nil{
@@ -141,8 +144,12 @@ class ViewController: UIViewController, MSTCentralManagerDelegate, MSTCentralMan
                 self.manager?.setAppState(UIApplication.shared.applicationState)
                 self.manager?.startLocationUpdates()
                 self.manager?.wakeUpAppSetting(true)
-                self.manager?.setSentTimeInBackgroundInMins(0.5, restTimeInBackgroundInMins:2) //Set the Send and Rest time for location update in mins
+                self.manager?.sendWithoutRest() // Scan for BLE in background every second. Please enable BackgroundMode in Targets -> Sign and capabilities
                 
+                /*
+                 Note: We will be deprecating the send and scan in the next release.
+                self.manager?.setSentTimeInBackgroundInMins(0.5, restTimeInBackgroundInMins: 1)
+                */
             }
         })
     }

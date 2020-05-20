@@ -6,6 +6,6 @@ target 'Mist-sample-background-dr' do
   use_frameworks!
 
   # Pods for Mist-sample-background-dr
-  pod 'MistSDKDR'
+  pod 'MistSDKDR-Beta'
 
 end

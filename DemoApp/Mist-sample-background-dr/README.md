@@ -18,7 +18,9 @@ didUpdateDRMap
 didUpdateDRRelativeLocation
 
 ### Background Settings:
-Mist SDK do have power optimised way of working in background for the use case of analytics. You can specify Send-Time and Rest-Time for SDK to work in background.
+Mist SDK do have power optimised way of working in background for the use case of analytics. You can use sendWithRest() callback to send the location data every second in background.
+
+You also need to enable 'When-in-use' or 'Always' location services from the device setting.
 
 ### Support
 For more information, refer Mist SDK documentation [wiki page](https://github.com/mistsys/mist-vble-ios-sdk/wiki) or contact <support@mist.com>

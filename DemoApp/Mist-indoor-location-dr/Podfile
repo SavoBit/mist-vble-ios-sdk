@@ -6,5 +6,5 @@ target 'Mist-indoor-location-dr' do
   use_frameworks!
 
   # Pods for Mist-indoor-location-dr
-  pod 'MistSDKDR'
+  pod 'MistSDKDR-Beta'
 end
